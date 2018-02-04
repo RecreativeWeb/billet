@@ -62,6 +62,12 @@ class Chapitre
      */
     private $picture;
 
+    public function __construct()
+    {
+        // Par défaut, la date de l'annonce est la date d'aujourd'hui
+        $this->datePublication = new \Datetime();
+        $this->publishable = false;
+    }
 
     /**
      * Get id
