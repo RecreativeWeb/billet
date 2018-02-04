@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Billet simple pour l'Alaska{% endblock %}</title>
+        <meta name="description" content="Découvrez le dernier roman de Jean Forteroche, Billet simple pour l'Alaska. Roman uniquement disponible en ligne avec publication périodique.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% block stylesheets %}
+           <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"> 
+           <link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}" />
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+    {% block body %}
+
+        <header>
+            {% block header %}
+
+            <div class="hidden">
+                <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Book</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            </div>
+
+            <i class="fa fa-bars"></i>
+            <hgroup>
+                <h1>Billet simple pour l'Alaska</h1>
+                <h2>Jean Forteroche</h2>
+            </hgroup>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Book</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            
+            {% endblock %}
+        </header> 
+
+        {% block main %}{% endblock %}
+
+    {% endblock %}
+
+    {% block javascripts %}
+    <script src="https://use.fontawesome.com/e192cafa35.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/hamburger.js"></script>
+    {% endblock %}
+
+    </body>
+</html>
+
+
+

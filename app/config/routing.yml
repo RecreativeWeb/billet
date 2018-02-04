@@ -1,0 +1,9 @@
+rw_blog:
+    resource: "@RWBlogBundle/Resources/config/routing.yml"
+    prefix:   /blog
+
+core:
+    resource: "@CoreBundle/Resources/config/routing.yml"
+    prefix:   /
+
+

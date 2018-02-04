@@ -1,0 +1,11 @@
+rw_blog_homepage:
+    path:     /
+    defaults: { _controller: RWBlogBundle:Blog:index }
+
+rw_blog_view:
+    path:     /view
+    defaults: { _controller: RWBlogBundle:Blog:view }
+
+rw_blog_edit:
+    path:     /edit
+    defaults: { _controller: RWBlogBundle:Blog:edit }
