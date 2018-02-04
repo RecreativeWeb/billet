@@ -192,28 +192,4 @@ class Chapitre
     {
         return $this->content;
     }
-
-    /**
-     * Set picture
-     *
-     * @param string $picture
-     *
-     * @return Chapitre
-     */
-    public function setPicture($picture)
-    {
-        $this->picture = $picture;
-
-        return $this;
-    }
-
-    /**
-     * Get picture
-     *
-     * @return string
-     */
-    public function getPicture()
-    {
-        return $this->picture;
-    }
 }
