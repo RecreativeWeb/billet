@@ -6,6 +6,7 @@
 
 @import 'hidden';
 @import 'header';
+@import 'chapitres';
 @import 'login';
 @import 'adminAuteur';
 @import 'news';
@@ -33,6 +34,9 @@ html{
 			margin: 0 auto;
 			background-color: rgba(255,255,255,0.7);
 			padding-top: 5rem;
+			h2{
+				text-align: center;
+			}
 		}
 	}
 }

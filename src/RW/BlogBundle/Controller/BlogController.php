@@ -11,10 +11,6 @@ class BlogController extends Controller
 	 */
     public function indexAction()
     {
-        $em = $this->getDoctrine()->getManager();
-
-        $chapitre = 
-
         return $this->render('RWBlogBundle:Blog:index.html.twig');
     }
 
