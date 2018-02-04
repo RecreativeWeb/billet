@@ -10,4 +10,5 @@ namespace RW\BlogBundle\Repository;
  */
 class ChapitreRepository extends \Doctrine\ORM\EntityRepository
 {
+	
 }

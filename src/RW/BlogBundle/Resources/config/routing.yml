@@ -9,3 +9,7 @@ rw_blog_view:
 rw_blog_edit:
     path:     /edit
     defaults: { _controller: RWBlogBundle:Blog:edit }
+
+rw_blog_add:
+    path:     /add
+    defaults: { _controller: RWBlogBundle:Blog:add }

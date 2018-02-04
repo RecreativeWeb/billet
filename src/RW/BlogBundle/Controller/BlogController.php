@@ -11,6 +11,10 @@ class BlogController extends Controller
 	 */
     public function indexAction()
     {
+        $em = $this->getDoctrine()->getManager();
+
+        $chapitre = 
+
         return $this->render('RWBlogBundle:Blog:index.html.twig');
     }
 
@@ -20,6 +24,14 @@ class BlogController extends Controller
     public function viewAction()
     {
     	return $this->render('RWBlogBundle:Blog:view.html.twig');
+    }
+
+    /**
+     * Ajouter un chapitre
+     */
+    public function addAction()
+    {
+        return $this->render('RWBlogBundle:Blog:add.html.twig');
     }
 
     /**
